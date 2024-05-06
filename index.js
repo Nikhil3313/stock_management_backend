@@ -53,7 +53,7 @@ const connectDB = require("./db/connect")
 const port = 5000;
 app.use(express.json());
 
-const product_routes = require("./routes/products" )
+const stockRoutes = require("./routes/stock" )
 
 const start = async () =>{
   try {
@@ -69,11 +69,8 @@ const start = async () =>{
 
 start()
 
-app.use("/api",product_routes)
+app.use("/api",stockRoutes)
 
-app.get("/getData" ,(req,res)=>{
-  // res.json({name:"hii"})
-  res.send("hello")
-})
+
 
 
