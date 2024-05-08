@@ -1,8 +1,6 @@
-// const ProductModel = require('../models/Data');
 const stockModel = require('../models/stock')
 
 
-//creaate
 const addStock = async (req, res) => {
     const { sku, name, price, type, unit, quantity } = req.body
     const productExist = await stockModel.findOne({ sku })

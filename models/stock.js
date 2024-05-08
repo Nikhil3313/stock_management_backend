@@ -4,7 +4,7 @@ const UserSchema = new mongoose.Schema({
     name: { type: String },
     price: { type: Number },
     quantity: { type: Number },
-    unit: { type: Number },
+    unit: { type: String },
     type: { type: String },
     sku: { type: String }
 
